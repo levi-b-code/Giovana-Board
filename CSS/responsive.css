@@ -1,0 +1,9 @@
+@media screen and (max-width:700px) {
+
+        .game-board {
+            max-width:25%;
+            display: flex;
+        }
+    }
+
+        

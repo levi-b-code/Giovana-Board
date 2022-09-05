@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 650px;
+    border-bottom: 35px solid rgb(43, 122, 239);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient( #87CEEB, #E0F6FF);
+    
+}
+
+.shark {
+    position: absolute;
+    bottom:-15px;
+    width: 100px;
+    animation: shark-animation 30.0s infinite linear;  
+}
+.onda {
+    position: absolute;
+    width:300px;
+    animation: onda-animation 8.0s infinite linear;  
+    bottom:-60px;
+}
+.irmaos {
+    position: absolute;
+    width:300px;
+    animation: irmaos-animation 20.0s infinite linear;  
+    bottom:-60px;
+}
+.pescando {
+    position: absolute;
+    width:300px;
+    animation: pescando-animation 20.0s infinite linear;  
+    bottom:-60px;
+}
+
+.barco {
+    position: absolute;
+    width:200px;
+    animation: barco-animation 30.0s infinite linear;  
+    bottom:-50px;
+}
+.naufrago {
+    position: absolute;
+    width:100px;
+    animation: naufrago-animation 400.0s infinite linear;  
+    bottom:-5px;
+}
+.pirata {
+    position: absolute;
+    width:600px;
+    animation: pirata-animation 30.0s infinite linear;  
+    bottom:-5px;
+}
+
+.gi {
+    position: absolute;
+    width: 300px;
+    bottom: 0PX;
+    left: 30px;
+    bottom: -15px;
+   
+    
+}
+.jump {
+    animation: jump 1000ms  ease-out;
+
+}
+
+.clouds {
+    position: absolute;
+    width: 330px;
+    animation: clouds-animation 80s infinite linear;
+    margin-top: 30px;
+      
+}
+.aviao {
+    position: absolute;
+    width: 80px;
+    animation: aviao-animation 40s infinite linear;
+    margin-top: 90px;    
+}
+.ovni {
+    position: absolute;
+    width: 100px;
+    animation: ovni-animation 20s infinite linear;
+    margin-top: 290px;    
+}
+
+@keyframes naufrago-animation {
+    from {
+        right: -1200px;
+
+    }
+
+    to {
+        right: 100%;
+    }
+}
+@keyframes pirata-animation {
+    from {
+        right: -1900px;
+
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes barco-animation {
+    from {
+        right: -1700px;
+
+    }
+
+    to {
+        right: 100%;
+    }
+}
+@keyframes pescando-animation {
+    from {
+        right: -2200px;
+
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes irmaos-animation {
+    from {
+        left: -3200px;
+
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+
+@keyframes shark-animation {
+    from {
+        right: -4800px;
+
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes onda-animation {
+    from {
+        right: -800px;
+
+    }
+
+    to {
+        right: 100%;
+    }
+}
+@keyframes jump {
+
+    0%{
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 380px;
+    }
+
+    50% {
+        bottom: 480px;
+    }
+
+    60% {
+        bottom: 480px;
+    }
+/*
+    70% {
+        bottom: 380px;
+    }
+
+    80% {
+        bottom: 280px;
+    }
+*/
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%
+    }
+}
+@keyframes aviao-animation {
+    from {
+        right: -2550px;
+    }
+
+    to {
+        right: 100%
+    }
+}
+@keyframes ovni-animation {
+    from {
+        left: 550px;
+    }
+
+    to {
+        left: 100%
+    }
+}
